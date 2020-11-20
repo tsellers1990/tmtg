@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarantainement</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!--modal card-BULMA-->
+    <div class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-card is-black">
+            <header class="modal-card-head">
+                <p class="modal-card-title">COVID Quarantainment:</p>
+            </header>
+            <section class="modal-card-body">
+                <!-- Content ... -->
+                <h3 class="names">What is COVID Quarantainment?</h3>
+                <p>
+                    Due to the hard times we are facing our site is designed to distract the mind.
+                    <br>
+                    We will generate a list of tasks that should be completed before your reward,
+                    <br>
+                    The list might be long but the reward is great!
+                </p>
+                <hr>
+                <h3 class="names">Instructions:</h3>
+                <p> Pick a number from 1-999 to display the number of tasks you want to complete!</p>
+                <p>Once you are done with your tasks get your reward: Which drink you should make!</p>
+                <hr>
+                <h3 class="names">Created by:</h3>
+                <p>
+                    The Sandlot:
+                    <br>
+                    Todd Leslie
+                    <br>
+                    Genet Worku
+                    <br>
+                    Tymothy Sellers
+                    <br>
+                    Maria Nevarez
+                </p>
+                <hr>
+                <h3 class="names">Created with:</h3>
+                <p>Bulma, jquery-ui, Jquery
+                </p>
+
+
+                <hr>
+                <h3 class="names">API</h3>
+                <p>
+                    WikiHow API &
+                    <br>
+                    The Cocktail DB
+                </p>
+            </section>
+            <footer class="modal-card-foot">
+                <button id="close-button" class="button">Start Here!</button>
+            </footer>
+        </div>
+    </div>
+    <!--Header of Page-->
+    <section class="hero has-background-black is-large">
+        <div class="hero is-centered">
+
+            <div class="container">
+                <h1 class="title is-1">COVID Quarantainment:</h1>
+                <figure class="image">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/17/58/dark-1283298__340.jpg" alt="burn baby">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <div class="columns">
+
+            <div class="column is-centered has-text-warning ">
+                <h2>"Bored? We have just what you need!"</h2>
+            </div>
+
+
+        </div>
+        <!--input field-->
+
+        <div id="first-display" class="column">
+            <div id="inputField">
+                <input id="input" class="input is-danger is-centered" type="text" placeholder="Want to waste time?">
+            </div>
+            <br>
+            <a id="run-everything-button" class="button is-warning is-rounded">Click it!</a>
+            <p>
+                <h2>Pick a number and </h2>
+            </p>
+
+            <p>
+                <h2>have some fun!</h2>
+            </p>
+        </div>
+
+
+        <!--DIV containing first API: WikiHow-->
+
+        <div id="wikiHow" class="hidden">
+
+        </div>
+
+        <!--DIV containing second API: Cocktail drinks-->
+        <div id="drinksAPI">
+            <p id="cocktail-code"></p>
+            <p id="drink-image"></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+
+
+    <!--limit from 10-25-->
+    <!--header-->
+    <!--html button-->
+
+
+</body>
+
+</html>
